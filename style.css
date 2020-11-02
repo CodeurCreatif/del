@@ -1,0 +1,66 @@
+body, html {
+  width: 100%;
+  margin: 0;
+}
+
+#container {
+  height: 100%;
+}
+
+.header {
+  width: 100vw;
+  height: 350px;
+  background: linear-gradient(0deg, #FFC1D8, #FFC1D8), #FFFFFF;
+}
+
+.header h1 {
+  margin-left: 50px;
+  color: purple;
+}
+
+.header .header__text {
+  width: 33%;
+  color: red;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.header .header__more {
+  margin: 5px auto auto 60px;
+  color: white;
+  background-color: #C4C4C4;
+  width: 113px;
+}
+
+.header ul {
+  display: inline-block;
+  margin-right: 50px;
+  color: royalblue;
+  float: right;
+  top: top-reigt;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header .header__order {
+  width: 260px;
+  height: 230px;
+  border: 1px black solid;
+  background-color: #C4C4C4;
+  margin: 10px 50px auto auto;
+  float: right;
+  color: purple;
+}
+
+.pieces {
+  width: 100%;
+  height: 470px;
+  border: 1px red solid;
+}
+
+.pieces .pieces__heading {
+  margin: 10px auto auto auto;
+  color: red;
+}

@@ -1,0 +1,274 @@
+//import fonts
+@font-face {
+    font-family: newfont;
+    src: url("fonts.Roboto-ThinItalic.ttf");
+}
+
+body, html{
+ width: 100%;
+ margin: 0;
+ font-size: 1.2em;
+ font-family: newfont, Arial;;
+}
+
+.container{
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+//  ---- header -----
+.header{
+    width: 100vw;
+    height: 450px;
+    background-color: #FFC1D8;
+    display: flex;
+    flex-direction: row;
+    &__left{
+        flex: 1;
+        text-align: justify;
+        line-height: 25px;
+        width: 33vw;
+        padding: 30px 10px 20px 30px;
+        &__title{
+            margin: 30px auto auto 50px;
+        }
+        &__text{
+            margin: 30px auto auto 50px;
+            widows: 33vw;
+            height: 33%;
+        }
+        strong{
+            margin: 50px auto auto 50px;
+            color: white;
+            background-color: #C4C4C4;
+        }
+    }
+    &__right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        &__menu{
+            float: left;
+            margin: 30px 100px auto auto;
+            ul{
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+        &__order{
+            text-align: center;
+            height: 260px;
+            width: 300px;
+            background-color: #C4C4C4;
+            margin: 0 100px auto auto;
+            &__number{
+                margin: 20px auto 10px auto;
+               
+            }
+            &__code{
+                padding: 10px 10px 10px 10px;
+            }
+            &__code__not_received{
+                float: right;
+                margin: 10px 0 5px auto;
+            }
+        }
+    }
+}
+
+// ----pieces ----
+.pieces{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__heading{
+        text-align: center;
+        margin: 10px auto 10px auto;
+    }
+    &__weeding-cake{
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto 10px 50px;
+        &__pic{
+            margin-right: 20px;
+        }
+        &__text{
+            text-align: justify;
+            width: auto;
+            height: 170px;
+            margin: auto 0 10px 5px;
+        }
+    }
+    &__baptism-cake{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding: 0;
+        &__text{
+            text-align: right;
+            width: auto;
+            margin: auto 0 10px auto;
+        }
+        &__pic{
+           margin: auto 50px auto 20px;
+        }
+    }
+}
+
+// ---piece-----
+.piece{
+    background-color: #FFC1D8;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    &__left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        &__heading{
+            margin: 50px auto 10px 100px;
+        }
+        ul{
+            margin: 10px auto auto 50px;
+            
+            li{
+                list-style: none;
+                margin: 10px auto 10px 50px;
+                padding: 5px;
+            }
+        }
+        &__order{
+            margin: 0 auto 10px auto;
+            a{
+                margin: 0 auto 10px 50px;
+                color: white;
+                background-color: #C4C4C4;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    &__right{
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        &__slider{
+            margin-top: 50px;
+        }
+        &__controls{
+        }
+
+    }
+}
+
+//-----slider----
+.slider{
+    height: 350px;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__heading{
+        margin: 15px auto 15px auto ;
+        text-align: center;
+        width: 100vw;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        &__vanille{
+            flex: 1;
+        }
+        &__pistache{
+            flex: 1;
+        }
+        &__chocolat{
+            flex: 1;
+        }
+        &__framboise{
+           flex: 1;
+        }
+    }
+}
+
+///---shop-----
+.shop{
+    background-color: pink;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &__heading{
+            margin: 10px auto 10px auto;
+        }
+        &__pic{
+            margin: 10px auto 10px auto;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &__place{
+            margin: 10px auto 10px auto;
+        }
+        &__map{
+            margin: 10px auto 10px auto;
+        }
+    }
+}
+
+//----footer-menu
+.footer-menu{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    &__nav{
+            float: left;
+            ul{
+                list-style: none;
+                display: inline-block;
+                color: chartreuse;
+                li{
+                    display: inline-block;
+                    color: brown;
+                    margin-right: 10px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+    }
+        &__search{
+            float: right;    
+            &__icone{
+                width: 100px;
+                border-radius: 90px;
+                border: 1px black solid;
+            }
+        }
+}
+
+//--footer--
+footer{
+    background-color: #C4C4C4;
+    height: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
